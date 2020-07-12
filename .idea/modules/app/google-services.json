@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492162737523",
+    "firebase_url": "https://health-management-d5c13.firebaseio.com",
+    "project_id": "health-management-d5c13",
+    "storage_bucket": "health-management-d5c13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492162737523:android:c564ed09696b9d06251106",
+        "android_client_info": {
+          "package_name": "com.example.healthmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492162737523-lquufcs0faq9nudbhfv12u3f5qab3t4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healthmanagement",
+            "certificate_hash": "ad563b5623d46da5672e64721d1d2a4f1e02336e"
+          }
+        },
+        {
+          "client_id": "492162737523-e5o9j2sqp42mtfqg8clhtpfsilom33tl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-B5ahMDLEt1rPFtkvO08yxwKEQJ58s7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492162737523-e5o9j2sqp42mtfqg8clhtpfsilom33tl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

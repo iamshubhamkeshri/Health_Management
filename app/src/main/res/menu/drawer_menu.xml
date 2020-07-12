@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="Dashboard"/>
+
+        <item
+            android:id="@+id/nav_more"
+
+            android:title="Advertise"/>
+        <item
+
+            android:title="Manage Stock"
+            android:id="@+id/nav_about"/>
+
+    </group>
+    <item android:title="share">
+        <menu>
+            <item
+
+                android:title="Share"
+                android:id="@+id/Share"/>
+        </menu>
+    </item>
+    <item
+
+        android:title="Logout"
+        android:id="@+id/Logout"/>
+
+</menu>
+
+
+
+
+
