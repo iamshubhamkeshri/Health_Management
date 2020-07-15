@@ -95,6 +95,14 @@ public class authenticate extends AppCompatActivity {
                 Toast.makeText ( authenticate.this,item, Toast.LENGTH_SHORT ).show ();
             }
         });
+        ccp = (CountryCodePicker) findViewById(R.id.ccp);
+        ccp.setOnCountryChangeListener(new CountryCodePicker.OnCountryChangeListener() {
+            @Override
+            public void onCountrySelected() {
+                Toast.makeText(authenticate.this, "Updated " + ccp.getSelectedCountryName (), Toast.LENGTH_SHORT).show();
+                countrycode=ccp.getSelectedCountryCode ().toString ().trim ();
+            }
+        });
         // shubham keshri ...
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,15 +110,8 @@ public class authenticate extends AppCompatActivity {
                 if (next.getText().equals("Get OTP")) {
                     phone = userPhone.getText().toString();
 
-                    ccp = (CountryCodePicker) findViewById(R.id.ccp);
-                    ccp.setOnCountryChangeListener(new CountryCodePicker.OnCountryChangeListener() {
-                        @Override
-                        public void onCountrySelected() {
-                            Toast.makeText(authenticate.this, "Updated " + ccp.getSelectedCountryName (), Toast.LENGTH_SHORT).show();
-                            countrycode=ccp.getSelectedCountryCode ().toString ().trim ();
-                        }
-                    });
-                    if ( !TextUtils.isEmpty(phone) && phone.length() == 10 &&  item!=null ) {
+
+                    if ( !TextUtils.isEmpty(phone) && phone.length() >=9 &&  item!=null ) {
                         next.setText("Verify");
                         first.setVisibility(View.GONE);
                         second.setVisibility(View.VISIBLE);
